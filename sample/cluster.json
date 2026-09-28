@@ -1,0 +1,24 @@
+{
+  "budget": 3,
+  "lag": 1,
+  "bad_item_code": "E_BAD_ITEM",
+  "bad_node_code": "E_BAD_NODE",
+  "bad_kind_code": "E_BAD_KIND",
+  "bad_upto_code": "E_BAD_UPTO",
+  "over_code": "E_OVER",
+  "back_code": "E_BACK",
+  "no_node_code": "E_NO_NODE",
+  "not_learner_code": "E_NOT_LEARNER",
+  "lag_code": "E_LAG",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "lead": [], "members": [], "promotes": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "lead", "item": "a" },
+    { "id": 2, "kind": "join", "node": "n1", "kindName": "学习" },
+    { "id": 3, "kind": "ack", "node": "n1", "upto": 1 },
+    { "id": 4, "kind": "promote", "node": "n1" },
+    { "id": 5, "kind": "join", "node": "n2", "kindName": "学习" },
+    { "id": 6, "kind": "lead", "item": "b" },
+    { "id": 7, "kind": "ack", "node": "n2", "upto": 1 }
+  ]
+}
